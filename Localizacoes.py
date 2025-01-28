@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout,QMessageBox
 import sys 
 
 class localizacao(QWidget):
@@ -174,6 +174,7 @@ class localizacao(QWidget):
         arquivo = open("clientes.txt" ,"+a")
         arquivo.write(f"Nome: {self.edit_Sala.text()}")
         arquivo.close()
+        QMessageBox.information(self,"Salvo","Os Dados da Localização foram salvos")
 
 
 

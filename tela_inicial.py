@@ -12,7 +12,7 @@ class TelaInicial(QWidget):
 
         self.label_titulo = QLabel("Clique para abrir a janela")
         self.button = QPushButton("Abrir Patrimonio")
-        self.button2 = QPushButton("Abrir Patrimonio")
+        self.button2 = QPushButton("Abrir Localização")
 
         self.layout_v.addWidget(self.label_titulo)
         self.layout_v.addWidget(self.button)
