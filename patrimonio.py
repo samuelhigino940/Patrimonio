@@ -131,73 +131,76 @@ class patrimonio(QWidget):
         self.setLayout(self.layout_v)
     
     def cadastrar(self):
-        # vamos criar uma variavel que fará referência ao um arquivo de texto
+        if(self.edit_Produto.text()=="" or self.edit_serie.text or self.edit_patrimonio.text or self.edit_tipo.text or self.edit_descricao.text or self.edit_localizacao or self.edit_fabricacao.text or self.edit_aquisicao.text):
+         QMessageBox.critical(self,"Erro","Você deve Preencher todos os campos")
         
-        # Arquivo de ID do Produto
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_Produto.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_Produto.text()}")
-        arquivo.close()
         
-        # Arquivo de Número de série
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_serie.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_serie.text()}")
-        arquivo.close()
+        else:
+            # Arquivo de ID do Produto
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_Produto.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_Produto.text()}")
+            arquivo.close()
+            
+            # Arquivo de Número de série
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_serie.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_serie.text()}")
+            arquivo.close()
 
-        # Arquivo de Nome de Patrimonio
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_patrimonio.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_patrimonio.text()}")
-        arquivo.close()
+            # Arquivo de Nome de Patrimonio
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_patrimonio.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_patrimonio.text()}")
+            arquivo.close()
 
-        # Arquivo de Tipo do Produto
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_tipo.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_tipo.text()}")
-        arquivo.close()
+            # Arquivo de Tipo do Produto
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_tipo.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_tipo.text()}")
+            arquivo.close()
 
-        # Arquivo de Descrição do Produto
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_descricao.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_descricao.text()}")
-        arquivo.close()
+            # Arquivo de Descrição do Produto
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_descricao.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_descricao.text()}")
+            arquivo.close()
 
-        # Arquivo de Número de Localização
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_localizacao.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_localizacao.text()}")
-        arquivo.close()
+            # Arquivo de Número de Localização
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_localizacao.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_localizacao.text()}")
+            arquivo.close()
 
-        # Arquivo de Data de Fabricação Do Produto
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_fabricacao.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_fabricacao.text()}")
-        arquivo.close()
+            # Arquivo de Data de Fabricação Do Produto
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_fabricacao.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_fabricacao.text()}")
+            arquivo.close()
 
-        # Arquivo de Data de Aquisição
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.label_aquisicao.text()}")
-        arquivo.close()
-        arquivo = open("clientes.txt" ,"+a")
-        arquivo.write(f"Nome: {self.edit_aquisicao.text()}")
-        arquivo.close()
-        QMessageBox.information(self,"Salvo","Os Dados do patrimonio foram salvos")
-        
+            # Arquivo de Data de Aquisição
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.label_aquisicao.text()}")
+            arquivo.close()
+            arquivo = open("clientes.txt" ,"+a")
+            arquivo.write(f"Nome: {self.edit_aquisicao.text()}")
+            arquivo.close()
+            QMessageBox.information(self,"Salvo","Os Dados do patrimonio foram salvos")
+            
 
 
 

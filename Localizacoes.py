@@ -118,6 +118,8 @@ class localizacao(QWidget):
 ###############################################################################
         
     def cadastrar(self):
+       if(self.edit_id.text or self.edit_empresa.text or self.edit_Logradouro.text or self.edit_Numero.text or self.edit_Predio.text or self.edit_Andar.text or self.edit_Sala.text):
+        QMessageBox.critical(self,"Erro","Você deve Preencher todos os campos")
         
         # Arquivo de ID do Produto
         arquivo = open("clientes.txt" ,"+a")
