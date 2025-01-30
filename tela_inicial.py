@@ -11,8 +11,11 @@ class TelaInicial(QWidget):
         self.layout_v = QVBoxLayout()
 
         self.label_titulo = QLabel("Clique para abrir a janela")
+        self.label_titulo.setStyleSheet("color: white; background-color: red; font-size: 14px; font-weight:bold")
         self.button = QPushButton("Abrir Patrimonio")
+        self.button.setStyleSheet("QPushButton{background-color:green;color:white;font-size:8pt;font-weight:bold}")
         self.button2 = QPushButton("Abrir Localização")
+        self.button2.setStyleSheet("QPushButton{background-color:green;color:white;font-size:8pt;font-weight:bold}")
 
         self.layout_v.addWidget(self.label_titulo)
         self.layout_v.addWidget(self.button)
